@@ -2,6 +2,7 @@
 # GO Webhook Spammer
 
 A simple app that repeatedly spams a Discord Webhook with a **Custom Message** and a **Custom Username**
+
 This is my first project in GO so if the code is bad idk what to tell u lol
 
 
