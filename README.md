@@ -21,6 +21,14 @@ A simple app that repeatedly spams a Discord Webhook with a **Custom Message** a
 
 ## Installation
 
+```go
+go mod init main.go
+go mod tidy
+```
+
+
+## Setup
+
 Edit main.json
 
 ```json
