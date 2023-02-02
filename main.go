@@ -61,7 +61,6 @@ func Spam(username string, content string, webhook string, amount int) {
 			if strings.Contains(err.Error(), "rate limit") {
 				var errors erorr
 				json.Unmarshal([]byte(err.Error()), &errors)
-				fmt.Println(Pretty(errors.Message))
 				i = i - 1
 			}
 		} else {
