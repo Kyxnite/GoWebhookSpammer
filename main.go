@@ -122,7 +122,7 @@ func Delete(webhook string) {
 	var SplitWebhook []string = strings.Split(ReplacedWebhook, "/")
 
 	if strings.Contains(resp.Status, "204") {
-		fmt.Println(Pretty("- Succesfully Deleted Webhook: " + SplitWebhook[3]))
+		fmt.Println(Pretty("- Succesfully Deleted Webhook: " + SplitWebhook[5]))
 	}
 }
 
@@ -176,7 +176,7 @@ func main() {
 	fmt.Print(Pretty("Delete After [Y/N]: "))
 	color.Set(color.FgHiMagenta)
 	fmt.Scanln(&delete_string)
-  
+
 	delete_after = strings.Contains(strings.ToLower(delete_string), "y")
 	fmt.Println()
 	color.Set(color.FgHiWhite)
